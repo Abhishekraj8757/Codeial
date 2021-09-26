@@ -57,6 +57,17 @@ module.exports.create = function(req,res)
     })
 }
 
+
+//now sign in and create the session for the users
+//this is done using passport js
+
+module.exports.createSession = function(req,res)
+{
+    return res.redirect('/');
+}
+
+/*
+//this sign in is done using manual-authentication
 //sign in and create the session for the users
 module.exports.createSession = function(req,res)
 {
@@ -91,3 +102,5 @@ module.exports.createSession = function(req,res)
 
     })
 }
+
+*/
